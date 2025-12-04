@@ -14,7 +14,7 @@ func CleanAllWorktrees(repoPath string) {
     }
 
     gitWorktrees := filepath.Join(repoPath, ".git", "worktrees")
-    os.RemoveAll(gitWorktrees) // más rápido
+    os.RemoveAll(gitWorktrees)
 
     fmt.Println("Limpieza global de worktrees completada.")
 }
